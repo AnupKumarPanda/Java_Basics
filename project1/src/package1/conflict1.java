@@ -10,8 +10,11 @@ public class ArmstrongNumber
 		int x=0;
 		while(num!=0)
 		{
-			int x= num%10;
-			x= x+(y*y*y);
+
+			int s= num%10;
+			x= y+(y*y*y);
+
+			
 			num =num/10;
 		}
 		if(y==basenum)
